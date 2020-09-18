@@ -106,8 +106,8 @@ export const startActiveInmueble = (id) => {
     }
 }
 
-//Eliminar un producto
-export const startDeleteProduct = (id) => {
+//Eliminar un Inmueble
+export const startDeleteInmueble = (id) => {
     return async (dispatch) => {
         try {
     

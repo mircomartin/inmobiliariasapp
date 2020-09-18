@@ -10,7 +10,7 @@ import { useHistory } from 'react-router';
 import Swal from 'sweetalert2';
 
 //Actions
-import { startDeleteProduct } from '../../../actions/inmuebles';
+import { startDeleteInmueble } from '../../../actions/inmuebles';
 
 export const InmuebleCard = ({ inmueble }) => {
 	const dispatch = useDispatch();
@@ -32,7 +32,7 @@ export const InmuebleCard = ({ inmueble }) => {
 		}).then((result) => {
 			if (result.value) {
 				// pasarlo al action
-				dispatch(startDeleteProduct(id));
+				dispatch(startDeleteInmueble(id));
 			}
 		});
 	}
