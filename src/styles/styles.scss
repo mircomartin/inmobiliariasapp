@@ -1,0 +1,13 @@
+//Base
+@import "./base/variables";
+@import "./base/base";
+
+//UI
+@import "./ui/spinner";
+@import "./ui/header";
+
+//pages
+@import "./pages/inmueble";
+
+//auth
+@import "./auth/auth";

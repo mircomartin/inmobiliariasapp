@@ -1,0 +1,95 @@
+.inmueble {
+    background-color: $fondoSeccion;
+    &__link {
+        color: #727272;
+        &:hover {
+            color: #727272
+        }
+    }
+    .active {
+        color: #5e5b62!important;
+        font-weight: 500;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    &__input {
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $gris;
+        background-color: transparent;
+        outline: none;
+        transition: .1s ease-in border;
+        &:focus {
+            border-bottom: 2px solid $verde;
+        }
+    }
+    &__label {
+		margin: 0;
+		padding: 10px 15px;
+		color: $blanco;
+		font-size: 0.875rem;
+		display: inline-block;
+		border-radius: 20px;
+		background-color: $negroClaro;
+		cursor: pointer;
+		&:hover {
+			opacity: .9;
+		}
+	}
+	input[type="file"]#file {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden!important;
+		position: absolute;
+		z-index: -1;
+	}
+    .media {
+        width: 48%;
+    }
+    &__icono {
+        font-size: 30px;
+    }
+    &__search {
+        border: 1px solid $gris;
+        padding: 10px;
+        width: 100%;
+        border-radius: 5px;
+        &:focus {
+            border: 2px solid $verde;
+        }
+    }
+    @media screen and (max-width: 765px) {
+        .media {
+            width: 100%;
+            margin-bottom: 1rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+.card {
+    &__button {
+        text-transform: uppercase;
+        color: $verde;
+        background-color: transparent;
+        border: none;
+        margin-right: 20px;
+        font-weight: 500;
+        transition: .15s ease color;
+        &:hover {
+            color: $verde2;
+            text-decoration: none;
+            background-color: $fondoSeccion;
+        }
+    }
+    &__img {
+        height: 200px;
+        min-height: 200px;
+        max-height: 200px;
+    }
+}

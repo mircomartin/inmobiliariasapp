@@ -1,0 +1,66 @@
+.auth {
+	&__icono {
+		background-color: $rojo;
+		display: inline-block;
+		font-size: 2.5rem;
+		border-radius: 50%;
+		padding: 20px;
+		color: #fff;
+	}
+	&__title {
+		text-align: center;
+		color: #000;
+		margin: 1.25rem 0;
+	}
+	&__input {
+		font-size: 0.875rem;
+		display: block;
+		width: 100%;
+		padding: 10px;
+		color: $gris;
+		outline: 0px;
+	}
+	.register {
+		border: none;
+		border-bottom: 1px solid $gris;
+		&:focus {
+			border-bottom: 1px solid $verde;
+		}
+	}
+	.login {
+		border: 1px solid $gris;
+		border-radius: 5px;
+		&:focus {
+			border: 1px solid $verde;
+		}
+	}
+	&__img {
+		max-width: 40px;
+		max-height: 40px;
+	}
+	.grande {
+		max-width: 300px;
+		max-height: 300px;
+	}
+	&__label {
+		margin: 0;
+		padding: 10px 15px;
+		color: $blanco;
+		font-size: 0.875rem;
+		display: inline-block;
+		border-radius: 20px;
+		background-color: $negroClaro;
+		cursor: pointer;
+		&:hover {
+			opacity: .9;
+		}
+	}
+	input[type="file"]#file {
+		width: 0.1px;
+		height: 0.1px;
+		opacity: 0;
+		overflow: hidden!important;
+		position: absolute;
+		z-index: -1;
+	}
+}

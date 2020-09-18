@@ -1,0 +1,17 @@
+* {
+    outline: none;
+}
+
+.boton {
+    width: 50%;
+}
+
+button:focus {
+    outline: none!important;
+    outline: none -webkit-focus-ring-color!important;
+}
+
+.nav-link.active {
+    color: none;
+    font-weight: 500;
+}

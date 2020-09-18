@@ -1,0 +1,25 @@
+.nav {
+    &__iconos {
+        color: $verde;
+    }
+    &__dropdownBoton {
+        outline: none!important;
+    }
+    @media screen and (max-width: 765px) {
+        &__main {
+            position: absolute;
+            width: 100%;
+            left: 0;
+            padding-left: 50px;
+            &__list {
+                width: 100%;
+            }
+        }
+    }
+    .active {
+        
+        font-weight: 700!important;
+        
+    }
+
+}
